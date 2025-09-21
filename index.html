@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+</head>
+<body>
+    <nav>
+        <!-- navabr -->
+    </nav>
+
+    <div class="main-container">
+        <!-- title begins here -->
+        <div class="title">
+            <h2>🎯Number Game</h2>
+            <p>Guess the Number Between 1 and 100!</p>
+        </div>
+        <!-- title ends here -->
+
+        <!-- boxes for users output  -->
+        <div class="boxes">
+            <div class="score box">
+                <h3>Score</h3>
+                <p id="score">100</p>
+            </div>
+
+            <div class="attempts box">
+                <h3>Attempts</h3>
+                <p id="attempts">0</p>
+            </div>
+
+            <div class="best-score box">
+                <h3>Best Score</h3>
+                <p id="high-score">--</p>
+            </div>
+        </div>
+
+        <!-- range box -->
+            <div class="range-box">
+                <p id="range">Range 1 - 100</p>
+            </div>
+            <br>
+            <!-- //form to take user input -->
+            <form>
+                <div class="user-input">
+                    <input type="text" placeholder="Enter Your Guess" class="number-input" required>
+                    <div class="warning-box"><p id="warning"></p></div>
+                </div>
+            
+                <div class="buttons">
+                    <button type="button" id="guess-button">Guess!</button>
+                    <button type="button" id="newgame-button">New Game</button>
+                </div>
+
+                <div class="display">
+                    <p id="display" class="">Make Your First Guess!</p>
+                </div>
+            </form>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,555 @@
+/* RESPONSIVE.CSS - Responsive Design for Number Guessing Game */
+
+/* ============================================
+   EXTRA SMALL DEVICES (Portrait phones)
+   Max width: 480px
+   ============================================ */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .main-container {
+        min-width: 320px;
+        max-width: 380px;
+        margin: 0 auto;
+        border-radius: 15px;
+    }
+
+    .title {
+        padding: 15px 10px;
+    }
+
+    .title h2 {
+        font-size: 2rem;
+    }
+
+    .title p {
+        font-size: 0.96rem;
+    }
+
+    .boxes {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0 20px;
+    }
+
+    .box {
+        min-width: 100px;
+        min-height: 80px;
+        margin-top: 10px;
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    .box p {
+        font-size: 1.2rem;
+        margin-top: 8px;
+    }
+
+    .range {
+        margin: 15px 10px;
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    form {
+        gap: 12px;
+        padding: 0 10px;
+    }
+
+    .number-input {
+        padding: 12px 15px;
+        font-size: 1.1rem;
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .buttons {
+        gap: 12px;
+        width: 100%;
+        margin: 10px 0px 10px 4px;
+    }
+
+    .buttons .guess-button,
+    .buttons .newgame-button {
+        padding: 15px 30px;
+        font-size: 1rem;
+        border-radius: 15px;
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .display {
+        margin: 15px 10px;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+}
+
+/* ============================================
+   SMALL DEVICES (Landscape phones)
+   481px - 767px
+   ============================================ */
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        padding: 15px;
+    }
+
+    .main-container {
+        min-width: 420px;
+        max-width: 500px;
+    }
+
+    .title {
+        padding: 18px 15px;
+    }
+
+    .title h2 {
+        font-size: 2.25rem;
+    }
+
+    .title p {
+        font-size: 1.1rem;
+    }
+
+    .boxes {
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+        padding: 0 15px;
+    }
+
+    .box {
+        min-width: 110px;
+        min-height: 85px;
+        margin-top: 12px;
+        font-size: 0.82rem;
+        flex: 1;
+        max-width: 130px;
+    }
+
+    .box p {
+        font-size: 1.3rem;
+        margin-top: 10px;
+    }
+
+    .range {
+        margin: 18px 15px;
+        padding: 14px;
+        font-size: 1rem;
+    }
+
+    form {
+        gap: 14px;
+    }
+
+    .number-input {
+        padding: 16px 20px;
+        font-size: 1.15rem;
+        max-width: 280px;
+    }
+
+    .buttons {
+        gap: 15px;
+    }
+
+    .buttons .guess-button,
+    .buttons .newgame-button {
+        padding: 18px 35px;
+        font-size: 1.1rem;
+        min-width: 200px;
+    }
+
+    .display {
+        margin: 18px 15px;
+        font-size: 1.15rem;
+    }
+}
+
+/* ============================================
+   MEDIUM DEVICES (Tablets)
+   768px - 1023px
+   ============================================ */
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        padding: 20px;
+    }
+
+    .main-container {
+        min-width: 600px;
+        max-width: 750px;
+    }
+
+    .title {
+        padding: 25px 20px;
+    }
+
+    .title h2 {
+        font-size: 3rem;
+    }
+
+    .title p {
+        font-size: 1.4rem;
+    }
+
+    .boxes {
+        padding: 0 30px;
+    }
+
+    .box {
+        min-width: 150px;
+        min-height: 120px;
+        margin-top: 25px;
+        font-size: 1.1rem;
+        padding: 15px;
+    }
+
+    .box p {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-top: 15px;
+    }
+
+    .range {
+        margin: 30px 30px;
+        padding: 20px;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    form {
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .number-input {
+        padding: 20px 25px;
+        font-size: 1.4rem;
+        max-width: 350px;
+    }
+
+    .buttons {
+        gap: 18px;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .buttons .guess-button,
+    .buttons .newgame-button {
+        padding: 22px 45px;
+        font-size: 1.3rem;
+        min-width: 180px;
+    }
+
+    .display {
+        margin: 25px 20px;
+        font-size: 1.4rem;
+    }
+}
+
+/* ============================================
+   LARGE DEVICES (Desktops)
+   1024px - 1199px
+   ============================================ */
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .main-container {
+        min-width: 700px;
+        max-width: 800px;
+    }
+
+    .title {
+        padding: 30px 25px;
+    }
+
+    .title h2 {
+        font-size: 3.2rem;
+    }
+
+    .title p {
+        font-size: 1.5rem;
+    }
+
+    .boxes {
+        padding: 0 40px;
+    }
+
+    .box {
+        min-width: 160px;
+        min-height: 130px;
+        margin-top: 30px;
+        font-size: 1.2rem;
+        padding: 18px;
+    }
+
+    .box p {
+        font-size: 2.2rem;
+        margin-top: 18px;
+    }
+
+    .range {
+        margin: 35px 40px;
+        padding: 22px;
+        font-size: 1.4rem;
+    }
+
+    .number-input {
+        padding: 22px 28px;
+        font-size: 1.5rem;
+        max-width: 400px;
+    }
+
+    .buttons {
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    .buttons .guess-button,
+    .buttons .newgame-button {
+        padding: 24px 50px;
+        font-size: 1.35rem;
+        min-width: 200px;
+    }
+
+    .display {
+        margin: 30px 25px;
+        font-size: 1.5rem;
+    }
+}
+
+/* ============================================
+   EXTRA LARGE DEVICES (Large Desktops)
+   1200px and up
+   ============================================ */
+@media (min-width: 1200px) {
+    .main-container {
+        min-width: 800px;
+        max-width: 900px;
+    }
+
+    .title {
+        padding: 35px 30px;
+    }
+
+    .title h2 {
+        font-size: 3.5rem;
+    }
+
+    .title p {
+        font-size: 1.6rem;
+    }
+
+    .boxes {
+        padding: 0 50px;
+    }
+
+    .box {
+        min-width: 180px;
+        min-height: 140px;
+        margin-top: 35px;
+        font-size: 1.3rem;
+        padding: 20px;
+    }
+
+    .box p {
+        font-size: 2.4rem;
+        margin-top: 20px;
+    }
+
+    .range {
+        margin: 40px 50px;
+        padding: 25px;
+        font-size: 1.5rem;
+    }
+
+    .number-input {
+        padding: 25px 30px;
+        font-size: 1.6rem;
+        max-width: 450px;
+    }
+
+    .buttons {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .buttons .guess-button,
+    .buttons .newgame-button {
+        padding: 26px 55px;
+        font-size: 1.4rem;
+        min-width: 220px;
+    }
+
+    .display {
+        margin: 35px 30px;
+        font-size: 1.6rem;
+    }
+}
+
+/* ============================================
+   LANDSCAPE ORIENTATION (for small screens)
+   ============================================ */
+@media (max-height: 600px) and (orientation: landscape) {
+    .main-container {
+        margin: 10px auto;
+    }
+
+    .title {
+        padding: 10px;
+    }
+
+    .title h2 {
+        font-size: 1.8rem;
+        margin-bottom: 5px;
+    }
+
+    .title p {
+        font-size: 0.9rem;
+    }
+
+    .boxes {
+        flex-direction: row;
+        padding: 0 10px;
+    }
+
+    .box {
+        min-height: 60px;
+        margin-top: 10px;
+        padding: 5px;
+    }
+
+    .box p {
+        font-size: 1.1rem;
+        margin-top: 5px;
+    }
+
+    .range {
+        margin: 10px;
+        padding: 8px;
+    }
+
+    form {
+        gap: 8px;
+    }
+
+    .number-input {
+        padding: 8px 12px;
+        font-size: 1rem;
+    }
+
+    .buttons {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .buttons .guess-button,
+    .buttons .newgame-button {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+
+    .display {
+        margin: 10px;
+        font-size: 1rem;
+    }
+}
+
+/* ============================================
+   ULTRA-WIDE SCREENS
+   ============================================ */
+@media (min-width: 1400px) {
+    .main-container {
+        max-width: 1000px;
+    }
+
+    .title h2 {
+        font-size: 4rem;
+    }
+
+    .title p {
+        font-size: 1.8rem;
+    }
+
+    .box {
+        min-width: 200px;
+        min-height: 150px;
+        font-size: 1.4rem;
+    }
+
+    .box p {
+        font-size: 2.6rem;
+    }
+
+    .number-input {
+        font-size: 1.8rem;
+        max-width: 500px;
+    }
+
+    .buttons .guess-button,
+    .buttons .newgame-button {
+        font-size: 1.5rem;
+        min-width: 250px;
+    }
+
+    .display {
+        font-size: 1.8rem;
+    }
+}
+
+/* ============================================
+   HIGH DPI DISPLAYS
+   ============================================ */
+@media (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi),
+       (min-resolution: 2dppx) {
+    .title h2,
+    .box p,
+    .number-input,
+    .buttons .guess-button,
+    .buttons .newgame-button {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* ============================================
+   ACCESSIBILITY IMPROVEMENTS
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+    .main-container {
+        animation: none;
+    }
+    
+    .number-input:hover,
+    .buttons .guess-button:hover,
+    .buttons .newgame-button:hover {
+        transform: none;
+    }
+    
+    * {
+        transition: none !important;
+    }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+@media print {
+    body {
+        background: none;
+    }
+    
+    .main-container {
+        box-shadow: none;
+        background: white;
+        color: black;
+    }
+    
+    .buttons {
+        display: none;
+    }
+    
+    .number-input {
+        border: 2px solid #000;
+    }
+}
